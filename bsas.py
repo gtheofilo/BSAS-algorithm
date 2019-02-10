@@ -253,7 +253,7 @@ def get_clusters_count():
     		
     	
     	
-    print("\n\nAverage Number of Clusters per Theta")	
+    print("\n\nMost Common Number of Clusters per Theta")	
     for Theta in theta_range:
     	print("a="+str(a)+"  b="+str(b)+"  Theta="+str(Theta)+"  Number of Clusters= "+str(most_common_in_list(number_of_clusters_per_theta[int(Theta)])))
     	
@@ -267,7 +267,7 @@ if __name__ == '__main__':
 	
 	ts=time()
 	number_of_clusters, theta = get_clusters_count()
-	print("\nSolution:\nNumber of Clusters: "+str(number_of_clusters)+" Theta: "+str(theta))
+	print("\nSolution:\nNumber of Clusters: "+str(number_of_clusters)+" for Theta: "+str(theta))
 	print("Execution Time Elapsed: "+str(round(time()-ts,2))+" seconds")
 	
 	
